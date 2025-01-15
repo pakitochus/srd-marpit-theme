@@ -1,0 +1,153 @@
+/*!
+ * Marp SRD theme.
+ *
+ * @theme srd-theme
+ * @author F.J. Martinez-Murcia (from default-theme)
+ *
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */
+
+@import 'default';
+/* @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+img {
+  background-color: transparent;
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+blockquote {
+    font-size: .8em;
+}
+
+blockquote p{
+  margin-bottom: 0.2em;
+}
+
+blockquote li{
+  margin-top: 0em;
+}
+
+section{
+  font-size: 24px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+h1{
+  font-size: 1.8em;
+}
+
+section.twocolumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  text-align: left;
+  }
+
+
+section .row.content {
+  flex: 1 1 auto;
+}
+
+section .row.footer {
+  flex: 0 1 40px;
+}
+
+span.hide {
+  opacity: 0;
+}
+
+span.hide:hover {
+  opacity: 1;
+}
+
+section blockquote p::before{    
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  padding-right: 0.5em;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/** Nota */
+span.note blockquote{
+  border-left: 5px solid #4493f8 !important;
+}
+
+span.note blockquote p::before{    
+  content: "\F431";
+  color: #4493f8 !important;
+}
+
+span.note blockquote p::first-line{
+  color: #4493f8 !important;
+}
+
+/** Truco */
+span.tip blockquote{
+  border-left: 5px solid #3fb950 !important;
+}
+
+span.tip blockquote p::before{    
+  content: "\F46B";
+  color: #3fb950 !important;
+}
+
+span.tip blockquote p::first-line{
+  color: #3fb950 !important;
+}
+
+/** Importante */
+span.important blockquote{
+  border-left: 5px solid #ab7df8 !important;
+}
+
+span.important blockquote p::before{    
+  content: "\F335";
+  color: #ab7df8 !important;
+}
+
+span.important blockquote p::first-line{
+  color: #ab7df8 !important;
+}
+
+/** warning */
+span.warning blockquote{
+  border-left: 5px solid #d29922 !important;
+}
+
+span.warning blockquote p::before{    
+  content: "\F33B";
+  color: #d29922 !important;
+} 
+
+span.warning blockquote p::first-line{
+  color: #d29922 !important;
+}
+
+/** Error */
+span.error blockquote{
+  border-left: 5px solid #da3633 !important;
+}
+
+span.error blockquote p::before{    
+  content: "\F337";
+  color: #da3633 !important;
+} 
+
+span.error blockquote p::first-line{
+  color: #da3633 !important;
+}
