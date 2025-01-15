@@ -33,7 +33,7 @@ _footer: ''
 3) [Slide 3: Columns](#5)
 4) [Slide 4: Figures](#6)
 5) [Slide 5: Hiding content](#7)
-6) [Slide 6: Custom classes](#8)
+6) [Slide 6: Custom alert boxes](#8)
 7) [Slide 7: Vertical spacing](#9)
 
 ---
@@ -87,7 +87,18 @@ Suscipit nisl nostra ligula quis tellus fringilla libero. Efficitur parturient l
 </div>
 
 <div>
-Habitant sapien nibh integer class dui. Pellentesque imperdiet senectus efficitur duis bibendum quisque. Quam praesent turpis facilisis, dui accumsan mattis. Cubilia fames vestibulum phasellus et ad tellus lobortis. Aliquet aliquet sociosqu diam lobortis primis sollicitudin convallis. 
+Additionally, it includes the usage of bootstrap icons <i class="bi bi-bootstrap"></i>, that can be added with the code 
+
+```html
+<i class="bi bi-icon-name"></i>
+```
+
+<span class="warning">
+
+> **Important**
+> This is a requirement for the usage of the [Custom alert boxes](#8).
+
+</span>
 
 Fringilla curae ut viverra duis augue sollicitudin netus. Mi parturient montes vitae rutrum condimentum primis eu scelerisque. Varius luctus purus ornare cubilia fames lobortis fames nostra sit. Libero aenean arcu molestie scelerisque adipiscing montes curabitur. 
 </div>
@@ -104,17 +115,22 @@ Apart from the regular [image syntax](https://marpit.marp.app/image-syntax), we 
 ---
 
 # Slide 5: Add-ons. Hiding content
-The `hide` span class can be used to hide content from the slide.
+The `hide` span class can be used to hide content from the slide, and display it only when hovering over the slide. To do so, use `<span class='hide'>`. 
 
 - Let's hide a math formula <span class='hide'>$R = \frac{\rho l}{A}=\frac{\rho l}{\pi r^2}$</span>
 
 And hide an image: 
 <span class='hide'>![center](figures/image.png)</span>
 
+<span class='tip'>
+
+> **Tip**
+> Mouse over the blank space to see the hidden content. 
+</span>
 
 --- 
 
-# Slide 6: Add-ons. Custom classes
+# Slide 6: Add-ons. Custom alert boxes
 We have also added several classes for qustom blockquotes (inspired by [<i class="bi bi-github"></i> GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts)): 
 
 <span class='note'>
