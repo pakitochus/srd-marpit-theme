@@ -2,6 +2,8 @@
 
 This is a custom theme for [Marp](https://marp.app/) based on the default theme, but with some CSS extensions and font customization. 
 
+![SRD-theme cover](demo_samples/cover_sample.png | width=100)
+
 ## How to use the theme
 
 1) In VsCode, hit F1 and run "Preferences: Open Workspace Settings".
